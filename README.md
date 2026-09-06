@@ -1,111 +1,101 @@
-# 💼 Slitwork
+<div align="center">
 
-<p align="center">
-  <img src="https://i.ibb.co/FJytDVn/Screenshot-61.png" alt="Slitwork Preview" width="900">
-</p>
+# Slitwork
 
-<p align="center">
-  <strong>A Modern Job Board Platform for Job Seekers & Employers</strong>
-</p>
+**A Modern Job Board Platform for Job Seekers & Employers**
 
-<p align="center">
-  <a href="#-features">Features</a> •
-  <a href="#-tech-stack">Tech Stack</a> •
-  <a href="#-installation">Installation</a> •
-  <a href="#-user-roles">Roles</a>
-</p>
+<img src="docs/screenshots/home-page.png" alt="Slitwork Preview" width="850">
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Laravel-12.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white">
-  <img src="https://img.shields.io/badge/PHP-8.2+-777BB4?style=for-the-badge&logo=php&logoColor=white">
-  <img src="https://img.shields.io/badge/Vue.js-2.x-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white">
-  <img src="https://img.shields.io/badge/MySQL-8.0+-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
-</p>
+<br>
 
----
+[![Laravel](https://img.shields.io/badge/Laravel-12.x-FF2D20?style=flat-square&logo=laravel&logoColor=white)](https://laravel.com)
+[![PHP](https://img.shields.io/badge/PHP-8.2%2B-777BB4?style=flat-square&logo=php&logoColor=white)](https://php.net)
+[![Vue.js](https://img.shields.io/badge/Vue.js-2.x-4FC08D?style=flat-square&logo=vue.js&logoColor=white)](https://vuejs.org)
+[![MySQL](https://img.shields.io/badge/MySQL-8.0%2B-4479A1?style=flat-square&logo=mysql&logoColor=white)](https://www.mysql.com)
+[![License](https://img.shields.io/badge/License-MIT-black?style=flat-square)](#license)
 
-## ✨ About
+[Overview](#overview) ·
+[Features](#features) ·
+[Tech Stack](#tech-stack) ·
+[Architecture](#architecture) ·
+[Installation](#installation) ·
+[User Roles](#user-roles) ·
+[Contributing](#contributing)
 
-**Slitwork** is a web-based **job board platform** built with **Laravel and Vue.js**.
-
-The platform connects **job seekers** with **employers**, providing a simple and organized way to discover job opportunities, publish vacancies, manage applications, and maintain company profiles.
-
-Slitwork uses a **role-based access control system** to provide different permissions for:
-
-* 👤 **User** — Job Seeker
-* 🏢 **Author** — Employer
-* 🛡️ **Admin** — Platform Administrator
+</div>
 
 ---
 
-## 🚀 Features
+## Overview
+
+**Slitwork** is a web-based job board platform built with **Laravel** and **Vue.js**. It connects job seekers with employers through a clean, organized interface for discovering opportunities, publishing vacancies, managing applications, and maintaining company profiles.
+
+The platform is built around a role-based access control system with three distinct roles:
+
+| Role | Description |
+|---|---|
+| **User** | Job seeker — searches, applies for, and saves job vacancies |
+| **Author** | Employer — manages company profile and job postings |
+| **Admin** | Platform administrator — manages users, roles, and categories |
+
+---
+
+## Features
 
 <table>
 <tr>
-<td width="50%">
+<td width="50%" valign="top">
 
-### 🔐 Authentication
-
-* Register & Login
-* Change Password
-* Account Deactivation
-* Laravel Fortify
+**Authentication**
+- Register & login
+- Change password
+- Account deactivation
+- Powered by Laravel Fortify
 
 </td>
-<td width="50%">
+<td width="50%" valign="top">
 
-### 🔎 Job Search
-
-* Interactive search
-* Category filtering
-* Vue.js SPA
-* Job detail panel
+**Job Search**
+- Interactive, real-time search
+- Category filtering
+- Vue.js single-page experience
+- Detailed job view panel
 
 </td>
 </tr>
-
 <tr>
-<td width="50%">
+<td width="50%" valign="top">
 
-### 🏢 Employer
-
-* Create job postings
-* Edit vacancies
-* Delete vacancies
-* Set application deadlines
-* Manage company profile
+**Employer Tools**
+- Create and edit job postings
+- Delete vacancies
+- Set application deadlines
+- Manage company profile
 
 </td>
-<td width="50%">
+<td width="50%" valign="top">
 
-### 📄 Applications
-
-* Apply for jobs
-* View saved jobs
-* Employer applicant management
-* Application tracking
+**Applications**
+- Apply directly to listings
+- Track submitted applications
+- Employer-side applicant management
 
 </td>
 </tr>
-
 <tr>
-<td width="50%">
+<td width="50%" valign="top">
 
-### ❤️ Saved Jobs
-
-* Bookmark vacancies
-* View saved jobs
-* Easily return to interesting opportunities
+**Saved Jobs**
+- Bookmark vacancies
+- Revisit saved opportunities anytime
 
 </td>
-<td width="50%">
+<td width="50%" valign="top">
 
-### 🛡️ Admin
-
-* Manage users
-* Manage roles
-* Manage permissions
-* Manage company categories
+**Administration**
+- Manage users and roles
+- Manage permissions
+- Manage company categories
 
 </td>
 </tr>
@@ -113,67 +103,43 @@ Slitwork uses a **role-based access control system** to provide different permis
 
 ---
 
-## 🎨 UI Preview
+## UI Preview
 
-### 🏠 Home Page
-
-<p align="center">
-  <img src="https://i.ibb.co/FJytDVn/Screenshot-61.png" alt="Home Page" width="850">
-</p>
-
-### 🔎 Vue.js Job Finder
-
-<p align="center">
-  <img src="https://i.ibb.co/sJwZw8x/Screenshot-66.png" alt="Job Finder SPA" width="850">
-</p>
-
-### 📋 Job Description
-
-<p align="center">
-  <img src="https://i.ibb.co/gMTxxj2/Screenshot-69.png" alt="Job Description" width="850">
-</p>
-
-### 🏢 Employer Dashboard
-
-<p align="center">
-  <img src="https://i.ibb.co/C6JKQ1h/Screenshot-78.png" alt="Author Dashboard" width="850">
-</p>
-
-### 🛡️ Admin Dashboard
-
-<p align="center">
-  <img src="https://i.ibb.co/mD4961P/Screenshot-79.png" alt="Admin Dashboard" width="850">
-</p>
+<table>
+<tr>
+<td align="center" width="33%">
+<img src="docs/screenshots/home-page.png" width="100%"><br>
+<sub><b>Home Page</b></sub>
+</td>
+<td align="center" width="33%">
+<img src="docs/screenshots/job-search.png" width="100%"><br>
+<sub><b>Job Finder (Vue.js SPA)</b></sub>
+</td>
+<td align="center" width="33%">
+<img src="docs/screenshots/admin-dashboard.png" width="100%"><br>
+<sub><b>Admin Dashboard</b></sub>
+</td>
+</tr>
+</table>
 
 ---
 
-## 🧩 Tech Stack
+## Tech Stack
 
-<p align="center">
-
-<img src="https://img.shields.io/badge/Laravel-12.x-FF2D20?style=flat-square&logo=laravel&logoColor=white">
-<img src="https://img.shields.io/badge/PHP-8.2+-777BB4?style=flat-square&logo=php&logoColor=white">
-<img src="https://img.shields.io/badge/Vue.js-2.x-4FC08D?style=flat-square&logo=vue.js&logoColor=white">
-<img src="https://img.shields.io/badge/Bootstrap-5.x-7952B3?style=flat-square&logo=bootstrap&logoColor=white">
-<img src="https://img.shields.io/badge/MySQL-8.0+-4479A1?style=flat-square&logo=mysql&logoColor=white">
-<img src="https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat-square&logo=javascript&logoColor=black">
-
-</p>
-
-| Layer             | Technology                   |
-| ----------------- | ---------------------------- |
-| Framework         | Laravel 12.61+               |
-| Backend           | PHP 8.2+                     |
-| Authentication    | Laravel Fortify              |
-| Frontend          | Blade + Bootstrap            |
-| SPA               | Vue.js 2                     |
-| Database          | MySQL                        |
+| Layer | Technology |
+|---|---|
+| Framework | Laravel 12.61+ |
+| Backend | PHP 8.2+ |
+| Authentication | Laravel Fortify |
+| Frontend | Blade + Bootstrap |
+| SPA | Vue.js 2 |
+| Database | MySQL |
 | Role & Permission | Spatie Laravel Permission v6 |
-| Notifications     | RealRashid Sweet Alert       |
+| Notifications | RealRashid Sweet Alert |
 
 ---
 
-## 🏗️ Application Architecture
+## Architecture
 
 ```text
                     ┌─────────────────────┐
@@ -205,114 +171,15 @@ Slitwork uses a **role-based access control system** to provide different permis
 
 ---
 
-## 👥 User Roles
+## User Roles
 
-| Role        | Permissions                                      |
-| ----------- | ------------------------------------------------ |
-| 👤 `user`   | Search, apply for, and save job vacancies        |
-| 🏢 `author` | Manage company profile and job postings          |
-| 🛡️ `admin` | Manage users, roles, permissions, and categories |
+| Role | Permissions |
+|---|---|
+| `user` | Search, apply for, and save job vacancies |
+| `author` | Manage company profile and job postings |
+| `admin` | Manage users, roles, permissions, and categories |
 
----
-
-## ⚙️ Requirements
-
-Make sure the following are installed:
-
-* **PHP 8.2+**
-* **Composer**
-* **MySQL 8.0+**
-* **Node.js**
-* **NPM**
-
----
-
-## 📦 Installation
-
-### 1. Clone Repository
-
-```bash
-git clone https://github.com/<username>/<repo>.git
-
-cd <repo>
-```
-
-### 2. Install Dependencies
-
-```bash
-composer install
-npm install
-```
-
-### 3. Environment Configuration
-
-```bash
-cp .env.example .env
-
-php artisan key:generate
-```
-
-### 4. Configure Database
-
-Update your `.env` file:
-
-```env
-DB_DATABASE=slitwork
-DB_USERNAME=root
-DB_PASSWORD=
-```
-
-Create the database in MySQL before running the migration.
-
-### 5. Run Migration
-
-```bash
-php artisan migrate
-```
-
-If seeders are available:
-
-```bash
-php artisan db:seed
-```
-
-### 6. Build Frontend
-
-Development:
-
-```bash
-npm run dev
-```
-
-Production:
-
-```bash
-npm run prod
-```
-
-### 7. Start Laravel Server
-
-```bash
-php artisan serve
-```
-
-Open:
-
-```text
-http://127.0.0.1:8000
-```
-
----
-
-## 🔑 Role & Permission
-
-Slitwork uses:
-
-**Spatie Laravel Permission**
-
-for managing roles and permissions.
-
-Example:
+Roles and permissions are managed with **Spatie Laravel Permission**:
 
 ```text
 User
@@ -334,51 +201,84 @@ Admin
  └── Manage Categories
 ```
 
-Roles and permissions can be initialized through:
+Roles and permissions can be initialized through `database/seeders`.
 
-```text
-database/seeders
+---
+
+## Installation
+
+### Requirements
+
+- PHP 8.2+
+- Composer
+- MySQL 8.0+
+- Node.js & npm
+
+### Steps
+
+**1. Clone the repository**
+```bash
+git clone https://github.com/<username>/<repo>.git
+cd <repo>
 ```
 
----
-
-## 🔄 Upgrade Notes
-
-Slitwork was originally developed using **Laravel 8 with PHP 7.3** and was later upgraded to **Laravel 12.61+** to improve compatibility with **PHP 8.2** and address security issues in older Laravel versions.
-
-The upgrade includes security-related fixes for issues such as:
-
-* Signed URL path confusion
-* CRLF injection during email validation
-
-For more information about the dependency upgrade, see:
-
-```text
-UPGRADE_NOTES.md
+**2. Install dependencies**
+```bash
+composer install
+npm install
 ```
 
+**3. Configure environment**
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+
+**4. Configure the database**
+
+Update your `.env` file:
+```env
+DB_DATABASE=slitwork
+DB_USERNAME=root
+DB_PASSWORD=
+```
+Create the database in MySQL before running the migration.
+
+**5. Run migrations**
+```bash
+php artisan migrate
+php artisan db:seed   # if seeders are available
+```
+
+**6. Build frontend assets**
+```bash
+npm run dev     # development
+npm run prod    # production
+```
+
+**7. Start the server**
+```bash
+php artisan serve
+```
+
+Then open [http://127.0.0.1:8000](http://127.0.0.1:8000).
+
 ---
 
-## 🤝 Contributing
+## Contributing
 
-Contributions are welcome!
-
-If you have an idea for a major change, please open an issue first so the changes can be discussed before submitting a pull request.
-
-Pull requests are always welcome.
+Contributions are welcome. For major changes, please open an issue first to discuss what you'd like to change before submitting a pull request.
 
 ---
 
-## 📄 License
+## License
 
 Slitwork is released under the **MIT License**.
 
----
+<div align="center">
 
-<p align="center">
-  <strong>Built with ❤️ using Laravel & Vue.js</strong>
-</p>
+<br>
 
-<p align="center">
-  ⭐ If you like this project, consider giving it a star!
-</p>
+Built with Laravel & Vue.js
+
+</div>
