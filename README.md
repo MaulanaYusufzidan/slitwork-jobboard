@@ -4,7 +4,7 @@
 
 **A Modern Job Board Platform for Job Seekers & Employers**
 
-<img src="docs/screenshots/home-page.png" alt="Slitwork Preview" width="850">
+<img src="home-page.png" alt="Slitwork Preview" width="850">
 
 <br>
 
@@ -108,15 +108,15 @@ The platform is built around a role-based access control system with three disti
 <table>
 <tr>
 <td align="center" width="33%">
-<img src="docs/screenshots/home-page.png" width="100%"><br>
+<img src="home-page.png" width="100%"><br>
 <sub><b>Home Page</b></sub>
 </td>
 <td align="center" width="33%">
-<img src="docs/screenshots/job-search.png" width="100%"><br>
+<img src="job-search.png" width="100%"><br>
 <sub><b>Job Finder (Vue.js SPA)</b></sub>
 </td>
 <td align="center" width="33%">
-<img src="docs/screenshots/admin-dashboard.png" width="100%"><br>
+<img src="admin-dashboard.png" width="100%"><br>
 <sub><b>Admin Dashboard</b></sub>
 </td>
 </tr>
