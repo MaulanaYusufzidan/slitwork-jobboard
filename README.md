@@ -1,6 +1,6 @@
 <div align="center">
 
-# Slitwork
+# SLITWORK -Jobboard
 
 ### Job Board Platform untuk Pencari Kerja dan Perusahaan
 
